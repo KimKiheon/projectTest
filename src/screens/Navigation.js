@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import SignInScreen from './SignInScreen';
 import React from 'react';
 import ForgetPasswordScreen from './ForgetPasswordScreen';
+import SignUpScreen from './SignUpScreen';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,12 @@ export default function Navigation() {
                 name=" " 
                 component={SignInScreen} 
                 options={headerOption}
+            />
+            <Stack.Screen 
+                name="SignUpScreen" 
+                component={SignUpScreen} 
+                options={{title: "회원 가입",
+            }}
             />
             <Stack.Screen 
                 name="ForgetPasswordScreen" 

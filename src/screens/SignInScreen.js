@@ -70,7 +70,7 @@ export default function SignInScreen({navigation}) {
                 <View style={styles.signUpForm}>
                     <View style={styles.signUp}>
                         <TouchableOpacity 
-                            // onPress={submit}
+                            onPress={() => navigation.navigate('SignUpScreen')}
                             activeOpacity={0.9}
                             style={styles.signUpBtn}
                         >
